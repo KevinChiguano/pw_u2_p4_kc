@@ -7,10 +7,30 @@ const app = Vue.createApp({
     //opcion2,
     //opcion..n
 
-    template:`
-    <h1>Hola mundo</h1>
-    <p>Desde Vue.JS</p>
-    `
+    //template:`
+    //<h1>Hola mundo</h1>
+    //<p>Desde Vue.JS</p>
+    //<p>{{1+1}}</p>
+    //`
+    data(){
+        return{
+            nombre: 'Kevin',
+            apellido: 'Chiguano',
+            mensaje: 'Hola mundo 2 desde Vue.JS'
+        }
+    },
+
+    methods:{
+        cambiarNombre(){
+            console.log('Boton cambiar nombre')
+            this.nombre = 'Paul'
+        },
+
+        cambiarApellido(){
+            console.log('Boton cambiar apellido')
+            this.apellido = 'Correa'
+        }
+    }
     
 
 })
