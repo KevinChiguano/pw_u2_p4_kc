@@ -12,54 +12,47 @@
 
 <body>
 
-    <header class="cabecera">Calculadora</header>
+    <header class ="cabecera">Calculadora</header>
     <nav></nav>
 
     <section>
         <div id="myAppCalculadora" class="container">
+            
+            <div class="calculadora">
 
-            <div class="calcu">
-                <table class="calculadora">
-                    <tr>
-                        <input type="text" name="" id="input">
-                    </tr>
+                <label class="pantalla" id="idpantalla" for="" v-on:click="borrar">{{numero}}</label>
 
-                    <tr>
-                        <td> <input type="button" value="7" onclick="addInput('7')"></td>
-                        <td> <input type="button" value="8" onclick="addInput('8')"></td>
-                        <td> <input type="button" value="9" onclick="addInput('9')"></td>
-                        <td> <input type="button" value="/" onclick="addInput('/')"></td>
-                    </tr>
+                <button class="boton" v-on:click="operacionCalcular">1</button>
+                <button class="boton" v-on:click="operacionCalcular">2</button>
+                <button class="boton" v-on:click="operacionCalcular">3</button>
 
-                    <tr>
-                        <td> <input type="button" value="4" onclick="addInput('4')"></td>
-                        <td> <input type="button" value="5" onclick="addInput('5')"></td>
-                        <td> <input type="button" value="6" onclick="addInput('6')"></td>
-                        <td> <input type="button" value="*" onclick="addInput('*')"></td>
-                    </tr>
+                <button class="boton" id="idsuma" v-on:click="operacionCalcular">+</button>
 
-                    <tr>
-                        <td> <input type="button" value="1" onclick="addInput('1')"></td>
-                        <td> <input type="button" value="2" onclick="addInput('2')"></td>
-                        <td> <input type="button" value="3" onclick="addInput('3')"></td>
-                        <td> <input type="button" value="-" onclick="addInput('-')"></td>
+                <button class="boton" v-on:click="operacionCalcular">4</button>
+                <button class="boton" v-on:click="operacionCalcular">5</button>
+                <button class="boton" v-on:click="operacionCalcular">6</button>
 
-                    </tr>
+                <button class="boton" id="idresta" v-on:click="operacionCalcular">-</button>
 
-                    <tr>
-                        <td> <input type="button" value="=" onclick="operacionCalcular()"></td>
-                        <td> <input type="button" value="0" onclick="addInput('0')"></td>
-                        <td> <input type="button" value="+" onclick="addInput('+')"></td>
-                    </tr>
+                <button class="boton" v-on:click="operacionCalcular">7</button>
+                <button class="boton" v-on:click="operacionCalcular">8</button>
+                <button class="boton" v-on:click="operacionCalcular">9</button>
 
-                </table>
+                <button class="boton" id="iddiv" v-on:click="operacionCalcular">/</button>
+                <button class="butonGrande" v-on:click="operacionCalcular">0</button>
+                
+                <button class="boton" id="idigual" v-on:click="operacionCalcular">=</button>
+                <button class="boton" id="idmulti" v-on:click="operacionCalcular">*</button>
+
+
             </div>
         </div>
 
 
     </section>
     <footer></footer>
-    <script src="../js/calculadoraApp.js"></script>
+
+    <script src="../js/appCalculadora.js"></script>
 
 </body>
 
