@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculadoraDeber</title>
+
+    <!--Intanciar la clase de java script-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!--Instanciar la clase de estilos CSS-->
+    <link rel="stylesheet" href="../css/estiloCalculadora.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- H1 es para titulos -->
+        <h1>Calculadora</h1>
+    </header>
+    <nav></nav>
+    <section>
+        <!-- El div se utiliza para agrupar elementos me diante el atributo class se le puede dar un nombre para acceder -->
+        <div class="container">
+
+           
+            <div class="calcu">
+
+
+                <input class="pantallaResultado" type="text" name="" id="input">
+
+                <input type="button" value="1" onclick="addInput('1')">
+                <input type="button" value="2" onclick="addInput('2')">
+                <input type="button" value="3" onclick="addInput('3')">
+                <input type="button" value="+" onclick="addInput('+')">
+
+                <input type="button" value="4" onclick="addInput('4')">
+                <input type="button" value="5" onclick="addInput('5')">
+                <input type="button" value="6" onclick="addInput('6')">
+                <input type="button" value="-" onclick="addInput('-')">
+
+
+                <input type="button" value="7" onclick="addInput('7')">
+                <input type="button" value="8" onclick="addInput('8')">
+                <input type="button" value="9" onclick="addInput('9')">
+                <input type="button" value="/" onclick="addInput('/')">
+
+
+
+               
+                <input class="butonGrande" type="button" value="0" onclick="addInput('0')">
+                <input type="button" value="=" onclick="operacionCalcular()">
+                <input type="button" value="*" onclick="addInput('*')">
+
+
+
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+
+    <script src="../js/calculadoraApp.js"></script>
+
+
+</body>
+
+</html>
